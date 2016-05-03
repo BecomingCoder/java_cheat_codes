@@ -17,7 +17,7 @@ public class Validator {
 	public static int getValidInt(int min, int max) {
 		int i = readValidInt();
 		while (i < min || i > max) {
-			System.out.print("Please put a number within range! (1-6): ");
+			System.out.print("Please put a number within range! (1-6): ");  // this can be changed to needed values
 			i = readValidInt();
 		}
 		return i;
@@ -38,7 +38,7 @@ public class Validator {
 	public static double getValidDouble(double min, double max) {
 		double i = readValidDouble();
 		while (i < min || i > max) {
-			System.out.print("Please put a number within range! (1-6): ");
+			System.out.print("Please put a number within range! (1-6): ");  // this can be changed to needed values
 			i = readValidDouble();
 		}
 		return i;
@@ -58,7 +58,7 @@ public class Validator {
 	public static float getValidFloat(float min, float max) {
 		float i = readValidFloat();
 		while (i < min || i > max) {
-			System.out.print("Please put a number within range! (1-6): ");
+			System.out.print("Please put a number within range! (1-6): ");  // this can be changed to needed values
 			i = readValidFloat();
 		}
 		return i;
@@ -78,7 +78,7 @@ public class Validator {
 	public static short getValidShort(short min, short max) {
 		short i = readValidShort();
 		while (i < min || i > max) {
-			System.out.print("Please put a number within range! (1-6): ");
+			System.out.print("Please put a number within range! (1-6): ");  // this can be changed to needed values
 			i = readValidShort();
 		}
 		return i;
@@ -98,7 +98,7 @@ public class Validator {
 	public static long getValidLong(long min, long max) {
 		long i = readValidLong();
 		while (i < min || i > max) {
-			System.out.print("Please put a number within range! (1-6): ");
+			System.out.print("Please put a number within range! (1-6): ");  // this can be changed to needed values
 			i = readValidLong();
 		}
 		return i;
@@ -107,7 +107,7 @@ public class Validator {
 	public static byte readValidByte() {
 		while (!scan.hasNextByte()) {
 			scan.nextLine();
-			System.out.print("Please enter a valid category #: ");
+			System.out.print("Please enter a valid category #: ");  // this can be changed
 		}
 		byte x = scan.nextByte();
 		scan.nextLine();
@@ -118,7 +118,7 @@ public class Validator {
 	public static byte getValidByte(byte min, byte max) {
 		byte i = readValidByte();
 		while (i < min || i > max) {
-			System.out.print("Please put a number within range! (1-6): ");
+			System.out.print("Please put a number within range! (1-6): ");  // this can be changed to needed values
 			i = readValidByte();
 		}
 		return i;
@@ -126,8 +126,8 @@ public class Validator {
 	
 	public static char readValidChar() {
 		   char letter = scan.next().charAt(0);
-	        if (Character.toString(letter).matches("^[a-zA-Z0-9]*$")) {
-	            System.out.println("Thank you");
+	        if (Character.toString(letter).matches("^[a-zA-Z0-9]*$")) {  // this can be changed
+	            System.out.println("Thank you");  // this isnt needed to work
 	        } else {
 	            System.out.println("Invalid input");
 	        }
@@ -138,7 +138,7 @@ public class Validator {
 	
 	
 	
-	// Validates an input of "y" or "n" regardless of case.
+	// Validates an input of "y" or "n" regardless of case. use for continue loops
 	public static String readYorN(String x, String y) {
 		String z = scan.nextLine();
 
